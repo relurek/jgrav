@@ -1,10 +1,10 @@
 package relurek.jgrav.item;
 
-import relurek.jgrav.util.Direction;
+import relurek.jgrav.util.GravityDirection;
 
 public class ItemUpAnchor extends ItemAnchor{
 	public ItemUpAnchor (Settings s) {
 		super(s);
-		this.setDirection(Direction.UP);
+		this.setDirection(GravityDirection.UP);
 		}
 }

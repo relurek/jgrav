@@ -1,0 +1,11 @@
+{
+	"package": "relurek.jgrav.asm",
+	"mixins": [
+	],
+	"client": [
+		"PlayerInventoryMixin",
+		"PlayerInventoryUpdateMixin"
+	],
+	"server": [
+	]
+}

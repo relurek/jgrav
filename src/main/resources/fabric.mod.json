@@ -22,7 +22,11 @@
       "relurek.jgrav.JGrav"
     ]
   },
-
+  
+  "mixins": [
+	"jgrav.mixins.json"
+  ],
+  
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",

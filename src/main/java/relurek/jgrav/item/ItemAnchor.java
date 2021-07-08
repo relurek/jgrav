@@ -10,12 +10,12 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 //import relurek.jgrav.item.GravItem;
-import relurek.jgrav.util.Direction;
+import relurek.jgrav.util.GravityDirection;
 import relurek.jgrav.util.Strength;
 
 public class ItemAnchor extends Item implements GravItem{
 	//private//
-	private Direction direction;
+	private GravityDirection direction;
 	private Strength strength = Strength.NORMAL;
 	
 	
@@ -25,10 +25,10 @@ public class ItemAnchor extends Item implements GravItem{
 	}
 	
 	
-	public Direction getDirection() {
+	public GravityDirection getDirection() {
 		return direction;
 	}
-	public void setDirection(Direction in) {
+	public void setDirection(GravityDirection in) {
 		direction = in;
 	}
 	

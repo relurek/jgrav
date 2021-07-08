@@ -1,10 +1,10 @@
 package relurek.jgrav.item;
 
-import relurek.jgrav.util.Direction;
+import relurek.jgrav.util.GravityDirection;
 
 public class ItemEastAnchor extends ItemAnchor{
 	public ItemEastAnchor (Settings s) {
 		super(s);
-		this.setDirection(Direction.EAST);
+		this.setDirection(GravityDirection.EAST);
 		}
 }

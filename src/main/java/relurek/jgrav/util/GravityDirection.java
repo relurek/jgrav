@@ -1,6 +1,6 @@
 package relurek.jgrav.util;
 
-public enum Direction {
+public enum GravityDirection {
 	DOWN {
 		@Override
 		public String string() {

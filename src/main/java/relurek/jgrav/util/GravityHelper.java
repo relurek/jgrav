@@ -1,6 +1,6 @@
 package relurek.jgrav.util;
 
-import relurek.jgrav.util.Direction;
+import relurek.jgrav.util.GravityDirection;
 
 public enum GravityHelper {
 	UP (){
@@ -10,13 +10,13 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.WEST;
+		public GravityDirection relativePosX() {
+			return GravityDirection.WEST;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.SOUTH;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.SOUTH;
 		}
 	},
 	DOWN (){
@@ -26,13 +26,13 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.EAST;
+		public GravityDirection relativePosX() {
+			return GravityDirection.EAST;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.SOUTH;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.SOUTH;
 		}
 	},
 	NORTH (){
@@ -42,13 +42,13 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.EAST;
+		public GravityDirection relativePosX() {
+			return GravityDirection.EAST;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.UP;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.UP;
 		}
 	},
 	EAST (){
@@ -58,13 +58,13 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.UP;
+		public GravityDirection relativePosX() {
+			return GravityDirection.UP;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.SOUTH;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.SOUTH;
 		}
 	},
 	SOUTH (){
@@ -74,13 +74,13 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.EAST;
+		public GravityDirection relativePosX() {
+			return GravityDirection.EAST;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.DOWN;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.DOWN;
 		}
 	},
 	WEST (){
@@ -90,17 +90,19 @@ public enum GravityHelper {
 		}
 		
 		@Override
-		public Direction relativePosX() {
-			return Direction.DOWN;
+		public GravityDirection relativePosX() {
+			return GravityDirection.DOWN;
 		}
 		
 		@Override
-		public Direction relativePosZ() {
-			return Direction.SOUTH;
+		public GravityDirection relativePosZ() {
+			return GravityDirection.SOUTH;
 		}
 	};
 	
 	public abstract double[] adjust(double x, double y, double z);
-	public abstract Direction relativePosX();
-	public abstract Direction relativePosZ();
+	public abstract GravityDirection relativePosX();
+	public abstract GravityDirection relativePosZ();
 }
+
+

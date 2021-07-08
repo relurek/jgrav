@@ -1,10 +1,9 @@
  package relurek.jgrav.item;
  
  
- import relurek.jgrav.util.Direction;
+ import relurek.jgrav.util.GravityDirection;
  
-interface GravItem {
-	 Direction getDirection();
-	 void setDirection(Direction in);
-	 
+public interface GravItem {
+	 GravityDirection getDirection();
+	 void setDirection(GravityDirection in);
  }
